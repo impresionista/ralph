@@ -39,5 +39,5 @@ COPY contrib/common/apt/ralph.list \
 
 RUN "$RALPH_IMAGE_TMP_DIR/install_ralph.sh"
 
-ENTRYPOINT ["/var/local/ralph/docker-entrypoint.sh"]
+ENTRYPOINT ["/var/local/ralph/docker-entrypoint.sh init"]
 CMD ["start"]
